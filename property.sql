@@ -18,24 +18,6 @@ CREATE TABLE Property(Property_id INTEGER PRIMARY KEY,
 					  
 
 INSERT INTO Property VALUES(1,'Condominium','Entire home/apt',6,2,2,4,'Real Bed',1200,295,1,23451,435);
-----------template----------------
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
-INSERT INTO Property VALUES(,'','',,,,,'',,,,,);
--------------yuvraj--------------
 INSERT INTO Property VALUES(2,'House','Private room',1,1,1,1,'Real Bed',500,60,2,6757,436);
  INSERT INTO Property VALUES(3,'Apartment','Entire home/apt',4,1,2,2,'Real Bed',1500,119,3,2567,437);
  INSERT INTO Property VALUES(4,'Apartment','Entire home/apt',4,2,2,2,'Real Bed',1250,151,4,2746,438);
@@ -88,5 +70,4 @@ INSERT INTO Property VALUES(48,'Loft','Private room',2,1,1,1,'Real Bed',856,94,4
 INSERT INTO Property VALUES(49,'Guest suite','Entire home/apt',4,1,1,2,'Real Bed',561,93,49,7541,483);
 INSERT INTO Property VALUES(50,'Condominium','Entire home/apt',5,2,2,2,'Real Bed',547,125,50,3154,484);
 INSERT INTO Property VALUES(51,'Townhouse','Entire home/apt',5,2.5,3,3,'Real Bed',660,209,51,9461,485);
---------------aditi-------------------
 
