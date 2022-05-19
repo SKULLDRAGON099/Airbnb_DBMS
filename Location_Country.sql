@@ -1,0 +1,27 @@
+ CREATE TABLE Location_Country(Country_id INTEGER PRIMARY KEY,
+ 							                Country VARCHAR(50));
+INSERT INTO Location_Country VALUES(599,'Argentina');
+INSERT INTO Location_Country VALUES(600,'Australia');
+INSERT INTO Location_Country VALUES(601,'Hong Kong');
+INSERT INTO Location_Country VALUES(602,'India');
+INSERT INTO Location_Country VALUES(603,'Japan');
+INSERT INTO Location_Country VALUES(604,'Canada');
+INSERT INTO Location_Country VALUES(605,'Ireland');
+INSERT INTO Location_Country VALUES(606,'Malaysia');
+INSERT INTO Location_Country VALUES(607,'Poland');
+INSERT INTO Location_Country VALUES(608,'China');
+INSERT INTO Location_Country VALUES(609,'Singapore');
+INSERT INTO Location_Country VALUES(610,'Germany');
+INSERT INTO Location_Country VALUES(611,'Romania');
+INSERT INTO Location_Country VALUES(612,'Mexico');
+INSERT INTO Location_Country VALUES(613,'Belgium');
+INSERT INTO Location_Country VALUES(614,'Israel');
+INSERT INTO Location_Country VALUES(615,'France');
+INSERT INTO Location_Country VALUES(616,'Denmark');
+INSERT INTO Location_Country VALUES(617,'Switzerland');
+INSERT INTO Location_Country VALUES(618,'New Zealand');
+INSERT INTO Location_Country VALUES(619,'Brazil');
+INSERT INTO Location_Country VALUES(620,'Turkey');
+INSERT INTO Location_Country VALUES(621,'United States');
+INSERT INTO Location_Country VALUES(622,'Norway');
+INSERT INTO Location_Country VALUES(623,'Netherlands');
