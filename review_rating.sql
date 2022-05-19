@@ -9,9 +9,7 @@ CREATE TABLE Review_Rating(review_rating_id INTEGER PRIMARY KEY,
 
 
 
-INSERT INTO Review_Rating VALUES(435, 7, 1, 23451 ); // 435added...
-// Make sure to match hosts_id and review_id
-----------YUVRAJ--------------
+INSERT INTO Review_Rating VALUES(435, 7, 1, 23451 ); 
  INSERT INTO Review_Rating VALUES(436, 9, 2, 6757);
  INSERT INTO Review_Rating VALUES(437, 8, 3, 2567);
  INSERT INTO Review_Rating VALUES(438, 6, 4, 2746);
@@ -37,7 +35,7 @@ INSERT INTO Review_Rating VALUES(435, 7, 1, 23451 ); // 435added...
  INSERT INTO Review_Rating VALUES(458, 9, 24, 2526);
  INSERT INTO Review_Rating VALUES(459, 10, 25, 8796);
  INSERT INTO Review_Rating VALUES(460, 8, 26, 8123);
-----------SARTAAJ-------------
+
 INSERT INTO Review_Rating VALUES(461,9,27,6758);
 INSERT INTO Review_Rating VALUES(462,8,28,1345);
 INSERT INTO Review_Rating VALUES(463,7,29,6729);
@@ -63,7 +61,7 @@ INSERT INTO Review_Rating VALUES(482,9,48,9651);
 INSERT INTO Review_Rating VALUES(483,6,49,7541);
 INSERT INTO Review_Rating VALUES(484,9,50,3154);
 INSERT INTO Review_Rating VALUES(485,10,51,9461);
-----------ADITI---------------
+
  INSERT INTO Review_Rating VALUES(486, 7, 53, 9021);
  INSERT INTO Review_Rating VALUES(487, 6, 54, 6934);
  INSERT INTO Review_Rating VALUES(488, 9, 55, 3746);
