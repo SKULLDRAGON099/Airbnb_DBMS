@@ -1,9 +1,6 @@
-CREATE OR REPLACE TRIGGER HOST_UPDATE
-AFTER UPDATE OF hosts_name ON hosts_entry FOR EACH ROW
+CREATE OR REPLACE PROCEDURE delete_host_id(ID IN INTEGER)
+AS
 BEGIN
-DBMS_OUTPUT.PUT_LINE('OLD NAME: ' ||:OLD.hosts_name);
-DBMS_OUTPUT.PUT_LINE('NEW NAME:' ||:NEW.hosts_name);
-EXCEPTION
-WHEN NO_DATA_FOUND THEN
-RAISE_APPLICATION_ERROR(-01403, 'No data found');
+      DELETE FROM hosts_entry WHERE hosts_id = ID;
+      dbms_output.put_line('Record Deleted');
 END;
