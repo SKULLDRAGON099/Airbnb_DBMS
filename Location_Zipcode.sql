@@ -1,6 +1,7 @@
 CREATE TABLE Location_Zipcode(Zip_id INTEGER PRIMARY KEY,
  						                       Zipcode VARCHAR(50));
- ---------------------YUVRAJ---------------------------                             
+
+
  INSERT INTO Location_Zipcode VALUES(1,'V6E 2P4');
  INSERT INTO Location_Zipcode VALUES(2,'V5Y');
  INSERT INTO Location_Zipcode VALUES(3,'V5Y');
@@ -26,5 +27,4 @@ CREATE TABLE Location_Zipcode(Zip_id INTEGER PRIMARY KEY,
  INSERT INTO Location_Zipcode VALUES(23,'V6B');
  INSERT INTO Location_Zipcode VALUES(24,'V5L 2H3');
  INSERT INTO Location_Zipcode VALUES(25,'V6Z 1P6');
- ----------------Sartaaj----------------------
- ----------------Aditi--------------------------
+
