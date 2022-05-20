@@ -75,10 +75,13 @@ INSERT INTO hosts_entry VALUES(7612,'Rishi','07 Aug 2011');
 INSERT INTO hosts_entry VALUES(8347,'Nitish','19 Feb 2017');
 INSERT INTO hosts_entry VALUES(3458,'Aaryan','02 March 2014');
 INSERT INTO hosts_entry VALUES(23451,'Aaryan','02 March 2014');
+
+
+
 CREATE TABLE reviews(review_id INTEGER PRIMARY KEY, first_date DATE, last_date DATE, hosts_id INTEGER ,FOREIGN KEY (hosts_id) REFERENCES hosts_entry(hosts_id));
 INSERT INTO reviews VALUES(1,'15 Feb 2011','26 Feb 2017',23451) --Example KEEP THE SAME HOSTS ID AS IN THE HOSTS ENTRY TABLE
 
-------YUVRAJ---------
+
 INSERT INTO reviews VALUES(2,'18 Feb 2010','14 Jun 2016',6757);
 INSERT INTO reviews VALUES(3,'21 Feb 2010','07 Jan 2019',2567);
 INSERT INTO reviews VALUES(4,'26 Feb 2010','31 Aug 2018',2746);
@@ -104,7 +107,7 @@ INSERT INTO reviews VALUES(23,'10 Feb 2017','31 Aug 2018',1756);
 INSERT INTO reviews VALUES(24,'14 Aug 2010','27 Jan 2019',2526);
 INSERT INTO reviews VALUES(25,'17 Aug 2010','06 Sep 2018',8796);
 INSERT INTO reviews VALUES(26,'25 Dec 2010','22 Aug 2016',8123);
---------sartaaj------------------
+
 INSERT INTO reviews VALUES(27,'25-12-2010','22-08-2016',6758);
 INSERT INTO reviews VALUES(28,'03-05-2011','20-06-2013',1345);
 INSERT INTO reviews VALUES(29,'21-07-2011','14-01-2019',6729);
@@ -130,7 +133,7 @@ INSERT INTO reviews VALUES(48,'15-08-2011','08-01-2019',9651);
 INSERT INTO reviews VALUES(49,'16-08-2011','25-12-2018',7541);
 INSERT INTO reviews VALUES(50,'09-10-2011','09-04-2018',3154);
 INSERT INTO reviews VALUES(51,'22-07-2014','05-01-2019',9461);
---------aditi--------------------
+
  INSERT INTO reviews VALUES(53,'27 Feb 2012','19 Jun 2018',9021);
  INSERT INTO reviews VALUES(54,'01 Mar 2011','17 Jan 2018',6934);
  INSERT INTO reviews VALUES(55,'26 Feb 2011','03 Mar 2018',3746);
@@ -157,6 +160,10 @@ INSERT INTO reviews VALUES(51,'22-07-2014','05-01-2019',9461);
  INSERT INTO reviews VALUES(76,'15 Aug 2012','06 Oct 2019',8347);
  INSERT INTO reviews VALUES(77,'25 Dec 2010','22 Aug 2016',3458);
 
+
+
+
+
 CREATE TABLE Review_Rating(review_rating_id INTEGER PRIMARY KEY, 
  						   review_score_rating INTEGER, 
 						   review_id INTEGER, 
@@ -169,8 +176,6 @@ CREATE TABLE Review_Rating(review_rating_id INTEGER PRIMARY KEY,
 
 
 INSERT INTO Review_Rating VALUES(435, 7, 1, 23451 ); 
---// Make sure to match hosts_id and review_id
-----------YUVRAJ--------------
  INSERT INTO Review_Rating VALUES(436, 9, 2, 6757);
  INSERT INTO Review_Rating VALUES(437, 8, 3, 2567);
  INSERT INTO Review_Rating VALUES(438, 6, 4, 2746);
@@ -196,7 +201,7 @@ INSERT INTO Review_Rating VALUES(435, 7, 1, 23451 );
  INSERT INTO Review_Rating VALUES(458, 9, 24, 2526);
  INSERT INTO Review_Rating VALUES(459, 10, 25, 8796);
  INSERT INTO Review_Rating VALUES(460, 8, 26, 8123);
-----------SARTAAJ-------------
+
 INSERT INTO Review_Rating VALUES(461,9,27,6758);
 INSERT INTO Review_Rating VALUES(462,8,28,1345);
 INSERT INTO Review_Rating VALUES(463,7,29,6729);
@@ -247,6 +252,10 @@ INSERT INTO Review_Rating VALUES(485,10,51,9461);
  INSERT INTO Review_Rating VALUES(508, 6, 75, 7612);
  INSERT INTO Review_Rating VALUES(509, 10, 76, 8347);
  INSERT INTO Review_Rating VALUES(510, 7, 77, 3458);
+ 
+ 
+ 
+ 
 
 CREATE TABLE Property(Property_id INTEGER PRIMARY KEY,
 					 Property_TYPE VARCHAR(50),
@@ -294,7 +303,7 @@ INSERT INTO Property VALUES(1,'Condominium','Entire home/apt',6,2,2,4,'Real Bed'
 
 CREATE TABLE Location_Zipcode(Zip_id INTEGER PRIMARY KEY,
  						                       Zipcode VARCHAR(50));
- ---------------------YUVRAJ---------------------------                             
+                            
  INSERT INTO Location_Zipcode VALUES(1,'V6E 2P4');
  INSERT INTO Location_Zipcode VALUES(2,'V5Y');
  INSERT INTO Location_Zipcode VALUES(3,'V5Y');
@@ -320,6 +329,10 @@ CREATE TABLE Location_Zipcode(Zip_id INTEGER PRIMARY KEY,
  INSERT INTO Location_Zipcode VALUES(23,'V6B');
  INSERT INTO Location_Zipcode VALUES(24,'V5L 2H3');
  INSERT INTO Location_Zipcode VALUES(25,'V6Z 1P6');
+
+
+
+
 
 CREATE TABLE Location_Country(Country_id INTEGER PRIMARY KEY,
  							                Country VARCHAR(50));
@@ -348,6 +361,10 @@ INSERT INTO Location_Country VALUES(620,'Turkey');
 INSERT INTO Location_Country VALUES(621,'United States');
 INSERT INTO Location_Country VALUES(622,'Norway');
 INSERT INTO Location_Country VALUES(623,'Netherlands');
+
+
+
+
 
 CREATE TABLE Location_State(State_id INTEGER PRIMARY KEY,
  						   State VARCHAR(50),
@@ -382,6 +399,10 @@ INSERT INTO Location_State VALUES(26,'Tripura',602);
 INSERT INTO Location_State VALUES(27,'Uttar Pradesh',602);
 INSERT INTO Location_State VALUES(28,'Uttarakhand',602);
 INSERT INTO Location_State VALUES(29,'West Bengal',602);
+
+
+
+
 
  CREATE TABLE Location_City(City_id INTEGER PRIMARY KEY,
  						   City VARCHAR(50),
@@ -436,6 +457,10 @@ INSERT INTO Location_State VALUES(29,'West Bengal',602);
  INSERT INTO Location_City VALUES(48,'Balachaur',21);
  INSERT INTO Location_City VALUES(49,'Moonak',21);
  INSERT INTO Location_City VALUES(50,'Ghanaur',21);
+ 
+ 
+ 
+ 
 
 
 CREATE TABLE Location_Neighborhood(Neighborhood_id INTEGER PRIMARY KEY,
@@ -467,6 +492,11 @@ CREATE TABLE Location_Neighborhood(Neighborhood_id INTEGER PRIMARY KEY,
  INSERT INTO Location_Neighborhood VALUES(23,'Fairview',33);
  INSERT INTO Location_Neighborhood VALUES(24,'Commercial Drive',42);
  INSERT INTO Location_Neighborhood VALUES(25,'Renfrew-Collingwood',15);
+ 
+ 
+ 
+ 
+ 
 
 CREATE TABLE Location_Street(Street_id INTEGER PRIMARY KEY,
 						   Street VARCHAR(50),
@@ -501,6 +531,12 @@ CREATE TABLE Location_Street(Street_id INTEGER PRIMARY KEY,
  INSERT INTO Location_Street VALUES(24,'Lorraine Avenue',24,22);
  INSERT INTO Location_Street VALUES(25,'Vista Way',25,15);
 
+
+
+
+
+
+
 CREATE TABLE Location_Neighborhood_Zipcode(
 				Neighborhood_Zipcode_id INTEGER PRIMARY KEY,
 				Zip_id INTEGER,
@@ -525,6 +561,13 @@ INSERT INTO Location_Neighborhood_Zipcode VALUES(14,14,14);
 INSERT INTO Location_Neighborhood_Zipcode VALUES(15,15,15);
 INSERT INTO Location_Neighborhood_Zipcode VALUES(16,16,16);
 INSERT INTO Location_Neighborhood_Zipcode VALUES(17,17,17);
+
+
+
+
+
+
+
 
 CREATE TABLE Location_Latitude_Longitude(Latitude_Longitude_id INTEGER PRIMARY KEY,
  										Latitude DOUBLE PRECISION,
@@ -557,7 +600,13 @@ INSERT INTO Location_Latitude_Longitude VALUES(22,49.27933433,-123.1237735,22);
 INSERT INTO Location_Latitude_Longitude VALUES(23,49.27755196,-123.1248665,23);
 INSERT INTO Location_Latitude_Longitude VALUES(24,49.27351142,-123.0694459,24);
 INSERT INTO Location_Latitude_Longitude VALUES(25,49.28000765,-123.1247453,25);
+
 SELECT * FROM Location_Latitude_Longitude;
+
+
+
+
+
 
 CREATE TABLE AIRBNB(id INTEGER PRIMARY KEY,
 				   hosts_id INTEGER,
