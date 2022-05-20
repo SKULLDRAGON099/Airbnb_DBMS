@@ -1,0 +1,583 @@
+CREATE TABLE hosts_entry(hosts_id INTEGER PRIMARY KEY, hosts_name VARCHAR(20), hosts_since DATE);
+INSERT INTO hosts_entry VALUES(6757,'Yuvraj','03 Dec 2012');
+INSERT INTO hosts_entry VALUES(2567,'Harshit','02 Oct 2010');
+INSERT INTO hosts_entry VALUES(2746,'Varun','17 Jul 2014');
+INSERT INTO hosts_entry VALUES(3418,'Nitish','13 Jul 2012');
+INSERT INTO hosts_entry VALUES(1723,'Tilak','18 May 2011');
+INSERT INTO hosts_entry VALUES(7689,'Karan','24 Feb 2017');
+INSERT INTO hosts_entry VALUES(2345,'Tarun','21 Jan 2012');
+INSERT INTO hosts_entry VALUES(5467,'Chris','13 jul 2017');
+INSERT INTO hosts_entry VALUES(1253,'Maxwell','14 Nov 2012');
+INSERT INTO hosts_entry VALUES(4512,'Virender','03 Jun 2014');
+INSERT INTO hosts_entry VALUES(5897,'Shivam','17 Feb 2012');
+INSERT INTO hosts_entry VALUES(7856,'Aakash','24 Aug 2015');
+INSERT INTO hosts_entry VALUES(9625,'Gagan','18 Sep 2018');
+INSERT INTO hosts_entry VALUES(2687,'Umran','26 Oct 2019');
+INSERT INTO hosts_entry VALUES(1320,'Rahul','13 Jul 2020');
+INSERT INTO hosts_entry VALUES(4581,'Usman','19 May 2018');
+INSERT INTO hosts_entry VALUES(7834,'Rohit','15 Dec 2016');
+INSERT INTO hosts_entry VALUES(2525,'Virat','18 Dec 2016');
+INSERT INTO hosts_entry VALUES(2617,'Arpan','29 Aug 2018');
+INSERT INTO hosts_entry VALUES(2013,'Ranbir','12 Jun 2017');
+INSERT INTO hosts_entry VALUES(2018,'Ranveer','26 Jan 2018');
+INSERT INTO hosts_entry VALUES(1756,'Arjun','16 March 2013');
+INSERT INTO hosts_entry VALUES(2526,'Karanveer','02 Oct 2012');
+INSERT INTO hosts_entry VALUES(8796,'Rajeev','25 Sep 2010');
+INSERT INTO hosts_entry VALUES(8123,'Danish','24 Nov 2015');
+INSERT INTO hosts_entry VALUES(6758,'Liam','15 Oct 2010');
+INSERT INTO hosts_entry VALUES(1345,'Naoh','16 Nov 2015');
+INSERT INTO hosts_entry VALUES(6729,'Oliver','24 Feb 2016');
+INSERT INTO hosts_entry VALUES(1425,'Elijah','17 Mar 2009');
+INSERT INTO hosts_entry VALUES(5621,'William','08 Jun 2018');
+INSERT INTO hosts_entry VALUES(1475,'Lucas','01 Dec 2018');
+INSERT INTO hosts_entry VALUES(8888,'Asta','05 Apr 2016');
+INSERT INTO hosts_entry VALUES(6852,'Yuno','13 Nov 2013');
+INSERT INTO hosts_entry VALUES(6958,'Kakashi','30 Jul 2018');
+INSERT INTO hosts_entry VALUES(5471,'Jonah','26 Jan 2017');
+INSERT INTO hosts_entry VALUES(1268,'Jaffery','21 Dec 2014');
+INSERT INTO hosts_entry VALUES(6666,'Benjamin','12 May 2009');
+INSERT INTO hosts_entry VALUES(6423,'Levi','28 Aug 2014');
+INSERT INTO hosts_entry VALUES(7777,'Daniel','18 May 2018');
+INSERT INTO hosts_entry VALUES(1753,'Michal','06 Jan 2020');
+INSERT INTO hosts_entry VALUES(5217,'Charlotte','14 Aug 2019');
+INSERT INTO hosts_entry VALUES(3497,'Emma','08 Sep 2020');
+INSERT INTO hosts_entry VALUES(3841,'Ava','27 Apr 2019');
+INSERT INTO hosts_entry VALUES(9999,'Amelia','17 Dec 2016');
+INSERT INTO hosts_entry VALUES(8745,'Sophia','30 Sep 2018');
+INSERT INTO hosts_entry VALUES(6513,'Mia','25 Sep 2016');
+INSERT INTO hosts_entry VALUES(9651,'Evelyn','30 Jan 2019');
+INSERT INTO hosts_entry VALUES(7541,'Eliza','18 Oct 2013');
+INSERT INTO hosts_entry VALUES(3154,'Alice','31 Dec 2018');
+INSERT INTO hosts_entry VALUES(9461,'Liliana','29 Mar 2019');
+INSERT INTO hosts_entry VALUES(9021,'Kabir','15 Dec 2014');
+INSERT INTO hosts_entry VALUES(6934,'Gauri','18 Nov 2011');
+INSERT INTO hosts_entry VALUES(3746,'Paras','30 May 2014');
+INSERT INTO hosts_entry VALUES(6476,'Riya','15 Dec 2012');
+INSERT INTO hosts_entry VALUES(7534,'Radhika','05 Dec 2014');
+INSERT INTO hosts_entry VALUES(5464,'Laima','25 Jan 2010');
+INSERT INTO hosts_entry VALUES(3434,'Gaurang','20 Dec 2010');
+INSERT INTO hosts_entry VALUES(8787,'Dev','04 June 2013');
+INSERT INTO hosts_entry VALUES(3861,'Priyanshu','03 Nov 2010');
+INSERT INTO hosts_entry VALUES(8743,'Sara','06 Oct 2016');
+INSERT INTO hosts_entry VALUES(4598,'Mukul','23 July 2011');
+INSERT INTO hosts_entry VALUES(6721,'Arush','24 Dec 2011');
+INSERT INTO hosts_entry VALUES(9832,'Nandini','15 Dec 2012');
+INSERT INTO hosts_entry VALUES(6585,'Mayank','16 May 2015');
+INSERT INTO hosts_entry VALUES(9842,'Jhalak','27 May 2013');
+INSERT INTO hosts_entry VALUES(3687,'Sneha','20 Sept 2010');
+INSERT INTO hosts_entry VALUES(7485,'Shailja','17 Oct 2016');
+INSERT INTO hosts_entry VALUES(8448,'Vanshika','16 Oct 2015');
+INSERT INTO hosts_entry VALUES(8378,'Shreya','31 Sept 2011');
+INSERT INTO hosts_entry VALUES(9371,'Isha','09 June 2014');
+INSERT INTO hosts_entry VALUES(6501,'Ishita','15 Oct 2010');
+INSERT INTO hosts_entry VALUES(2043,'Vishi','08 Dec 2011');
+INSERT INTO hosts_entry VALUES(7612,'Rishi','07 Aug 2011');
+INSERT INTO hosts_entry VALUES(8347,'Nitish','19 Feb 2017');
+INSERT INTO hosts_entry VALUES(3458,'Aaryan','02 March 2014');
+INSERT INTO hosts_entry VALUES(23451,'Aaryan','02 March 2014');
+CREATE TABLE reviews(review_id INTEGER PRIMARY KEY, first_date DATE, last_date DATE, hosts_id INTEGER ,FOREIGN KEY (hosts_id) REFERENCES hosts_entry(hosts_id));
+INSERT INTO reviews VALUES(1,'15 Feb 2011','26 Feb 2017',23451) --Example KEEP THE SAME HOSTS ID AS IN THE HOSTS ENTRY TABLE
+
+------YUVRAJ---------
+INSERT INTO reviews VALUES(2,'18 Feb 2010','14 Jun 2016',6757);
+INSERT INTO reviews VALUES(3,'21 Feb 2010','07 Jan 2019',2567);
+INSERT INTO reviews VALUES(4,'26 Feb 2010','31 Aug 2018',2746);
+INSERT INTO reviews VALUES(5,'22 Jun 2010','21 Jan 2019',3418);
+INSERT INTO reviews VALUES(6,'02 Jun 2011','30 Sep 2018',1723);
+INSERT INTO reviews VALUES(7,'03 Oct 2010','08 Jul 2018',7689);
+INSERT INTO reviews VALUES(8,'23 Feb 2010','13 Jul 2013',2345);
+INSERT INTO reviews VALUES(9,'04 Aug 2018','26 Aug 2018',5467);
+INSERT INTO reviews VALUES(10,'24 Dec 2017','16 Feb 2018',1253);
+INSERT INTO reviews VALUES(11,'06 May 2011','31 Mar 2018',4512);
+INSERT INTO reviews VALUES(12,'01 Oct 2012','03 Jan 2019',5897);
+INSERT INTO reviews VALUES(13,'17 Mar 2011','31 Oct 2018',7856);
+INSERT INTO reviews VALUES(14,'06 Jun 2011','02 Feb 2019',9625);
+INSERT INTO reviews VALUES(15,'30 Apr 2011','02 Jan 2019',2687);
+INSERT INTO reviews VALUES(16,'25 Feb 2010','07 Sep 2018',1320);
+INSERT INTO reviews VALUES(17,'22 Feb 2010','17 Jan 2019',4581);
+INSERT INTO reviews VALUES(18,'17 Feb 2010','02 Jan 2019',7834);
+INSERT INTO reviews VALUES(19,'09 Jul 2011','29 Jan 2019',2525);
+INSERT INTO reviews VALUES(20,'16 Nov 2011','27 Dec 2018',2617);
+INSERT INTO reviews VALUES(21,'01 Jun 2013','31 Dec 2018',2013);
+INSERT INTO reviews VALUES(22,'04 Jul 2011','11 Oct 2018',2018);
+INSERT INTO reviews VALUES(23,'10 Feb 2017','31 Aug 2018',1756);
+INSERT INTO reviews VALUES(24,'14 Aug 2010','27 Jan 2019',2526);
+INSERT INTO reviews VALUES(25,'17 Aug 2010','06 Sep 2018',8796);
+INSERT INTO reviews VALUES(26,'25 Dec 2010','22 Aug 2016',8123);
+--------sartaaj------------------
+INSERT INTO reviews VALUES(27,'25-12-2010','22-08-2016',6758);
+INSERT INTO reviews VALUES(28,'03-05-2011','20-06-2013',1345);
+INSERT INTO reviews VALUES(29,'21-07-2011','14-01-2019',6729);
+INSERT INTO reviews VALUES(30,'08-07-2015','01-10-2018',1425);
+INSERT INTO reviews VALUES(31,'30-12-2012','23-05-2018',5621);
+INSERT INTO reviews VALUES(32,'19-03-2011','20-01-2019',1475);
+INSERT INTO reviews VALUES(33,'25-05-2011','07-10-2018',8888);
+INSERT INTO reviews VALUES(34,'10-05-2011','20-01-2019',6852);
+INSERT INTO reviews VALUES(35,'04-07-2013','29-01-2019',6958);
+INSERT INTO reviews VALUES(36,'31-05-2011','10-09-2018',5471);
+INSERT INTO reviews VALUES(37,'21-08-2011','01-10-2018',1268);
+INSERT INTO reviews VALUES(38,'27-02-2010','27-01-2019',6666);
+INSERT INTO reviews VALUES(39,'01-08-2011','01-02-2019',6423);
+INSERT INTO reviews VALUES(40,'10-05-2012','31-12-2018',7777);
+INSERT INTO reviews VALUES(41,'20-06-2011','09-12-2018',1753);
+INSERT INTO reviews VALUES(42,'23-08-2011','15-12-2018',5217);
+INSERT INTO reviews VALUES(43,'02-07-2011','01-01-2019',3497);
+INSERT INTO reviews VALUES(44,'14-07-2011','20-01-2019',3841);
+INSERT INTO reviews VALUES(45,'30-08-2011','20-01-2019',9999);
+INSERT INTO reviews VALUES(46,'26-07-2018','05-01-2019',8745);
+INSERT INTO reviews VALUES(47,'19-09-2011','04-04-2018',6513);
+INSERT INTO reviews VALUES(48,'15-08-2011','08-01-2019',9651);
+INSERT INTO reviews VALUES(49,'16-08-2011','25-12-2018',7541);
+INSERT INTO reviews VALUES(50,'09-10-2011','09-04-2018',3154);
+INSERT INTO reviews VALUES(51,'22-07-2014','05-01-2019',9461);
+--------aditi--------------------
+ INSERT INTO reviews VALUES(53,'27 Feb 2012','19 Jun 2018',9021);
+ INSERT INTO reviews VALUES(54,'01 Mar 2011','17 Jan 2018',6934);
+ INSERT INTO reviews VALUES(55,'26 Feb 2011','03 Mar 2018',3746);
+ INSERT INTO reviews VALUES(56,'15 Apr 2010','15 Jan 2017',6476);
+ INSERT INTO reviews VALUES(57,'08 Jan 2015','01 Sep 2019',7534);
+ INSERT INTO reviews VALUES(58,'13 Feb 2011','18 Jul 2018',5464);
+ INSERT INTO reviews VALUES(59,'25 Feb 2011','17 Jul 2014',3434);
+ INSERT INTO reviews VALUES(60,'09 May 2017','06 Aug 2019',8787);
+ INSERT INTO reviews VALUES(61,'12 Dec 2016','26 Aug 2019',3861);
+ INSERT INTO reviews VALUES(62,'16 May 2015','30 Mar 2018',8743);
+ INSERT INTO reviews VALUES(63,'15 Oct 2010','06 Jan 2017',4598);
+ INSERT INTO reviews VALUES(64,'17 Nov 2012','31 Oct 2017',6721);
+ INSERT INTO reviews VALUES(65,'09 Jul 2013','12 Mar 2018',9832);
+ INSERT INTO reviews VALUES(66,'11 Apr 2013','22 Jun 2019',6585);
+ INSERT INTO reviews VALUES(67,'27 Jan 2010','17 Sep 2017',9842);
+ INSERT INTO reviews VALUES(68,'21 Mar 2014','27 Jan 2017',3687);
+ INSERT INTO reviews VALUES(69,'17 Dec 2012','12 Jun 2018',7485);
+ INSERT INTO reviews VALUES(70,'06 Nov 2011','29 Jan 2018',8448);
+ INSERT INTO reviews VALUES(71,'19 Nov 2010','23 Nov 2017',8378);
+ INSERT INTO reviews VALUES(72,'02 Jul 2014','30 Dec 2019',9371);
+ INSERT INTO reviews VALUES(73,'14 Jun 2012','18 Oct 2016',6501);
+ INSERT INTO reviews VALUES(74,'23 Nov 2012','03 Oct 2017',2043);
+ INSERT INTO reviews VALUES(75,'14 Nov 2011','07 Jan 2018',7612);
+ INSERT INTO reviews VALUES(76,'15 Aug 2012','06 Oct 2019',8347);
+ INSERT INTO reviews VALUES(77,'25 Dec 2010','22 Aug 2016',3458);
+
+CREATE TABLE Review_Rating(review_rating_id INTEGER PRIMARY KEY, 
+ 						   review_score_rating INTEGER, 
+						   review_id INTEGER, 
+						   hosts_id INTEGER,
+						   FOREIGN KEY (review_id) REFERENCES reviews(review_id),
+						   FOREIGN KEY (hosts_id) REFERENCES hosts_entry(hosts_id));
+               
+               
+
+
+
+INSERT INTO Review_Rating VALUES(435, 7, 1, 23451 ); 
+--// Make sure to match hosts_id and review_id
+----------YUVRAJ--------------
+ INSERT INTO Review_Rating VALUES(436, 9, 2, 6757);
+ INSERT INTO Review_Rating VALUES(437, 8, 3, 2567);
+ INSERT INTO Review_Rating VALUES(438, 6, 4, 2746);
+ INSERT INTO Review_Rating VALUES(439, 8, 5, 3418);
+ INSERT INTO Review_Rating VALUES(440, 7, 6, 1723);
+ INSERT INTO Review_Rating VALUES(441, 7, 7, 7689);
+ INSERT INTO Review_Rating VALUES(442, 8, 8, 2345);
+ INSERT INTO Review_Rating VALUES(443, 9, 9, 5467);
+ INSERT INTO Review_Rating VALUES(444, 10, 10, 1253);
+ INSERT INTO Review_Rating VALUES(445, 8, 11, 4512);
+ INSERT INTO Review_Rating VALUES(446, 8, 12, 5897);
+ INSERT INTO Review_Rating VALUES(447, 9, 13, 7856);
+ INSERT INTO Review_Rating VALUES(448, 7, 14, 9625);
+ INSERT INTO Review_Rating VALUES(449, 8, 15, 2687);
+ INSERT INTO Review_Rating VALUES(450, 8, 16, 1320);
+ INSERT INTO Review_Rating VALUES(451, 7, 17, 4581);
+ INSERT INTO Review_Rating VALUES(452, 6, 18, 7834);
+ INSERT INTO Review_Rating VALUES(453, 9, 19, 2525);
+ INSERT INTO Review_Rating VALUES(454, 8, 20, 2617);
+ INSERT INTO Review_Rating VALUES(455, 10, 21, 2013);
+ INSERT INTO Review_Rating VALUES(456, 8, 22, 2018);
+ INSERT INTO Review_Rating VALUES(457, 7, 23, 1756);
+ INSERT INTO Review_Rating VALUES(458, 9, 24, 2526);
+ INSERT INTO Review_Rating VALUES(459, 10, 25, 8796);
+ INSERT INTO Review_Rating VALUES(460, 8, 26, 8123);
+----------SARTAAJ-------------
+INSERT INTO Review_Rating VALUES(461,9,27,6758);
+INSERT INTO Review_Rating VALUES(462,8,28,1345);
+INSERT INTO Review_Rating VALUES(463,7,29,6729);
+INSERT INTO Review_Rating VALUES(464,9,30,1425);
+INSERT INTO Review_Rating VALUES(465,9,31,5621);
+INSERT INTO Review_Rating VALUES(466,8,32,1475);
+INSERT INTO Review_Rating VALUES(467,9,33,8888);
+INSERT INTO Review_Rating VALUES(468,5,34,6852);
+INSERT INTO Review_Rating VALUES(469,7,35,6958);
+INSERT INTO Review_Rating VALUES(470,6,36,5471);
+INSERT INTO Review_Rating VALUES(471,9,37,1268);
+INSERT INTO Review_Rating VALUES(472,9,38,6666);
+INSERT INTO Review_Rating VALUES(473,8,39,6423);
+INSERT INTO Review_Rating VALUES(474,9,40,7777);
+INSERT INTO Review_Rating VALUES(475,7,41,1753);
+INSERT INTO Review_Rating VALUES(476,7,42,5217);
+INSERT INTO Review_Rating VALUES(477,8,43,3497);
+INSERT INTO Review_Rating VALUES(478,9,44,3841);
+INSERT INTO Review_Rating VALUES(479,5,45,9999);
+INSERT INTO Review_Rating VALUES(480,6,46,8745);
+INSERT INTO Review_Rating VALUES(481,7,47,6513);
+INSERT INTO Review_Rating VALUES(482,9,48,9651);
+INSERT INTO Review_Rating VALUES(483,6,49,7541);
+INSERT INTO Review_Rating VALUES(484,9,50,3154);
+INSERT INTO Review_Rating VALUES(485,10,51,9461);
+ INSERT INTO Review_Rating VALUES(486, 7, 53, 9021);
+ INSERT INTO Review_Rating VALUES(487, 6, 54, 6934);
+ INSERT INTO Review_Rating VALUES(488, 9, 55, 3746);
+ INSERT INTO Review_Rating VALUES(489, 7, 56, 6476);
+ INSERT INTO Review_Rating VALUES(490, 5, 57, 7534);
+ INSERT INTO Review_Rating VALUES(491, 8, 58, 5464);
+ INSERT INTO Review_Rating VALUES(492, 9, 59, 3434);
+ INSERT INTO Review_Rating VALUES(493, 6, 60, 8787);
+ INSERT INTO Review_Rating VALUES(494, 10, 61, 3861);
+ INSERT INTO Review_Rating VALUES(495, 7, 62, 8743);
+ INSERT INTO Review_Rating VALUES(496, 9, 63, 4598);
+ INSERT INTO Review_Rating VALUES(497, 7, 64, 6721);
+ INSERT INTO Review_Rating VALUES(498, 6, 65, 9832);
+ INSERT INTO Review_Rating VALUES(499, 9, 66, 6585);
+ INSERT INTO Review_Rating VALUES(500, 9, 67, 9842);
+ INSERT INTO Review_Rating VALUES(501, 5, 68, 3687);
+ INSERT INTO Review_Rating VALUES(502, 8, 69, 7485);
+ INSERT INTO Review_Rating VALUES(503, 10, 70, 8448);
+ INSERT INTO Review_Rating VALUES(504, 7, 71, 8378);
+ INSERT INTO Review_Rating VALUES(505, 9, 72, 9371);
+ INSERT INTO Review_Rating VALUES(506, 9, 73, 6501);
+ INSERT INTO Review_Rating VALUES(507, 8, 74, 2043);
+ INSERT INTO Review_Rating VALUES(508, 6, 75, 7612);
+ INSERT INTO Review_Rating VALUES(509, 10, 76, 8347);
+ INSERT INTO Review_Rating VALUES(510, 7, 77, 3458);
+
+CREATE TABLE Property(Property_id INTEGER PRIMARY KEY,
+					 Property_TYPE VARCHAR(50),
+					 Room_type VARCHAR(50),
+					 Accommodations INTEGER,
+					 Bathrooms INTEGER,
+					 Bedrooms INTEGER,
+					 Beds INTEGER,
+					 Bed_type VARCHAR(50),
+					 Sqaure_feet INT,
+					 Price INT,
+					 review_id INT,
+					 hosts_id INT,
+					 review_rating_id INTEGER,
+					  FOREIGN KEY (review_id) REFERENCES reviews(review_id),
+					  FOREIGN KEY (hosts_id) REFERENCES hosts_entry(hosts_id),
+					  FOREIGN KEY (review_rating_id) REFERENCES Review_rating(review_rating_id)
+					  );
+					  
+
+INSERT INTO Property VALUES(1,'Condominium','Entire home/apt',6,2,2,4,'Real Bed',1200,295,1,23451,435);
+ INSERT INTO Property VALUES(3,'Apartment','Entire home/apt',4,1,2,2,'Real Bed',1500,119,3,2567,437);
+ INSERT INTO Property VALUES(4,'Apartment','Entire home/apt',4,2,2,2,'Real Bed',1250,151,4,2746,438);
+ INSERT INTO Property VALUES(5,'Condominium','Entire home/apt',2,1,1,1,'Real Bed',1000,119,5,3418,439);
+ INSERT INTO Property VALUES(6,'Apartment','Entire home/apt',2,1,1,1,'Real Bed',1050,146,6,1723,440);
+ INSERT INTO Property VALUES(7,'House','Entire home/apt',4,1,1,2,'Real Bed',650,140,7,7689,441);
+ INSERT INTO Property VALUES(8,'Apartment','Entire home/apt',5,2,2,2,'Real Bed',700,140,8,2345,442);
+ INSERT INTO Property VALUES(9,'House','Private room',4,1,2,3,'Real Bed',850,220,9,5467,443);
+ INSERT INTO Property VALUES(10,'House','Entire home/apt',8,1,3,4,'Real Bed',700,1201,10,1253,444);
+ INSERT INTO Property VALUES(11,'House','Entire home/apt',8,3,4,4,'Real Bed',600,135,11,4512,445);
+ INSERT INTO Property VALUES(12,'Apartment','Entire home/apt',2,1,1,1,'Real Bed',780,98,12,5897,446);
+ INSERT INTO Property VALUES(13,'Condominium','Private room',2,1,1,1,'Real Bed',500,55,13,7856,447);
+ INSERT INTO Property VALUES(14,'House','Private room',4,1,2,2,'Real Bed',600,80,14,9625,448);
+ INSERT INTO Property VALUES(15,'House','Private room',2,1,1,1,'Real Bed',450,94,15,2687,449);
+ INSERT INTO Property VALUES(16,'Apartment','Entire home/apt',2,1,1,1,'Real Bed',500,108,16,1320,450);
+ INSERT INTO Property VALUES(17,'Guest suite','Entire home/apt',3,1,2,2,'Real Bed',670,110,17,4581,451);
+ INSERT INTO Property VALUES(18,'Apartment','Entire home/apt',3,1,1,1,'Real Bed',614,230,18,7834,452);
+ INSERT INTO Property VALUES(19,'House','Private room',2,1,1,1,'Real Bed',670,50,19,2525,453);
+ INSERT INTO Property VALUES(20,'House','Entire home/apt',2,1,1,1,'Real Bed',780,66,20,2617,454);
+ INSERT INTO Property VALUES(21,'Apartment','Entire home/apt',6,1,2,3,'Real Bed',1100,300,21,2013,455);
+ INSERT INTO Property VALUES(22,'Apartment','Entire home/apt',4,1,1,1,'Real Bed',660,159,22,2018,456);
+ INSERT INTO Property VALUES(23,'Apartment','Entire home/apt',3,1,1,1,'Real Bed',500,169,23,1756,457);
+ INSERT INTO Property VALUES(24,'House','Entire home/apt',2,1,1,1,'Real Bed',300,98,24,2526,458);
+
+
+CREATE TABLE Location_Zipcode(Zip_id INTEGER PRIMARY KEY,
+ 						                       Zipcode VARCHAR(50));
+ ---------------------YUVRAJ---------------------------                             
+ INSERT INTO Location_Zipcode VALUES(1,'V6E 2P4');
+ INSERT INTO Location_Zipcode VALUES(2,'V5Y');
+ INSERT INTO Location_Zipcode VALUES(3,'V5Y');
+ INSERT INTO Location_Zipcode VALUES(4,'V6B');
+ INSERT INTO Location_Zipcode VALUES(5,'V6Z 2S1');
+ INSERT INTO Location_Zipcode VALUES(6,'V5N');
+ INSERT INTO Location_Zipcode VALUES(7,'V5V1Y8');
+ INSERT INTO Location_Zipcode VALUES(8,'V6Z');
+ INSERT INTO Location_Zipcode VALUES(9,'V5K');
+ INSERT INTO Location_Zipcode VALUES(10,'V5N 1T6');
+ INSERT INTO Location_Zipcode VALUES(11,'V5M 2V4');
+ INSERT INTO Location_Zipcode VALUES(12,'V5Y');
+ INSERT INTO Location_Zipcode VALUES(13,'V5T');
+ INSERT INTO Location_Zipcode VALUES(14,'V5L 2N1');
+ INSERT INTO Location_Zipcode VALUES(15,'V6E');
+ INSERT INTO Location_Zipcode VALUES(16,'V6H 1N7');
+ INSERT INTO Location_Zipcode VALUES(17,'V5T 2V6');
+ INSERT INTO Location_Zipcode VALUES(18,'V6Z 2S1');
+ INSERT INTO Location_Zipcode VALUES(19,'V5R 2V8');
+ INSERT INTO Location_Zipcode VALUES(20,'V5R 2V8');
+ INSERT INTO Location_Zipcode VALUES(21,'V6K 2M8');
+ INSERT INTO Location_Zipcode VALUES(22,'V6Z');
+ INSERT INTO Location_Zipcode VALUES(23,'V6B');
+ INSERT INTO Location_Zipcode VALUES(24,'V5L 2H3');
+ INSERT INTO Location_Zipcode VALUES(25,'V6Z 1P6');
+
+CREATE TABLE Location_Country(Country_id INTEGER PRIMARY KEY,
+ 							                Country VARCHAR(50));
+INSERT INTO Location_Country VALUES(599,'Argentina');
+INSERT INTO Location_Country VALUES(600,'Australia');
+INSERT INTO Location_Country VALUES(601,'Hong Kong');
+INSERT INTO Location_Country VALUES(602,'India');
+INSERT INTO Location_Country VALUES(603,'Japan');
+INSERT INTO Location_Country VALUES(604,'Canada');
+INSERT INTO Location_Country VALUES(605,'Ireland');
+INSERT INTO Location_Country VALUES(606,'Malaysia');
+INSERT INTO Location_Country VALUES(607,'Poland');
+INSERT INTO Location_Country VALUES(608,'China');
+INSERT INTO Location_Country VALUES(609,'Singapore');
+INSERT INTO Location_Country VALUES(610,'Germany');
+INSERT INTO Location_Country VALUES(611,'Romania');
+INSERT INTO Location_Country VALUES(612,'Mexico');
+INSERT INTO Location_Country VALUES(613,'Belgium');
+INSERT INTO Location_Country VALUES(614,'Israel');
+INSERT INTO Location_Country VALUES(615,'France');
+INSERT INTO Location_Country VALUES(616,'Denmark');
+INSERT INTO Location_Country VALUES(617,'Switzerland');
+INSERT INTO Location_Country VALUES(618,'New Zealand');
+INSERT INTO Location_Country VALUES(619,'Brazil');
+INSERT INTO Location_Country VALUES(620,'Turkey');
+INSERT INTO Location_Country VALUES(621,'United States');
+INSERT INTO Location_Country VALUES(622,'Norway');
+INSERT INTO Location_Country VALUES(623,'Netherlands');
+
+CREATE TABLE Location_State(State_id INTEGER PRIMARY KEY,
+ 						   State VARCHAR(50),
+ 						   Country_id INTEGER, FOREIGN KEY(Country_id) REFERENCES Location_Country(Country_id));
+
+INSERT INTO Location_State VALUES(1,'Andhra Pradesh',602);
+INSERT INTO Location_State VALUES(2,'Arunachal Pradesh',602);
+INSERT INTO Location_State VALUES(3,'Assam',602);
+INSERT INTO Location_State VALUES(4,'Bihar',602);
+INSERT INTO Location_State VALUES(5,'Chhattisgarh',602);
+INSERT INTO Location_State VALUES(6,'Goa',602);
+INSERT INTO Location_State VALUES(7,'Gujarat',602);
+INSERT INTO Location_State VALUES(8,'Haryana',602);
+INSERT INTO Location_State VALUES(9,'Himachal Pradesh',602);
+INSERT INTO Location_State VALUES(10,'Jammu And Kashmir',602);
+INSERT INTO Location_State VALUES(11,'Jharkhand',602);
+INSERT INTO Location_State VALUES(12,'Karnataka',602);
+INSERT INTO Location_State VALUES(13,'Kerala',602);
+INSERT INTO Location_State VALUES(14,'Madhya Pradesh',602);
+INSERT INTO Location_State VALUES(15,'Maharashtra',602);
+INSERT INTO Location_State VALUES(16,'Manipur',602);
+INSERT INTO Location_State VALUES(17,'Meghalaya',602);
+INSERT INTO Location_State VALUES(18,'Mizoram',602);
+INSERT INTO Location_State VALUES(19,'Nagaland',602);
+INSERT INTO Location_State VALUES(20,'Odisha',602);
+INSERT INTO Location_State VALUES(21,'Punjab',602);
+INSERT INTO Location_State VALUES(22,'Rajasthan',602);
+INSERT INTO Location_State VALUES(23,'Sikkim',602);
+INSERT INTO Location_State VALUES(24,'Tamil Nadu',602);
+INSERT INTO Location_State VALUES(25,'Telangana',602);
+INSERT INTO Location_State VALUES(26,'Tripura',602);
+INSERT INTO Location_State VALUES(27,'Uttar Pradesh',602);
+INSERT INTO Location_State VALUES(28,'Uttarakhand',602);
+INSERT INTO Location_State VALUES(29,'West Bengal',602);
+
+ CREATE TABLE Location_City(City_id INTEGER PRIMARY KEY,
+ 						   City VARCHAR(50),
+					      State_id INTEGER, FOREIGN KEY(State_id) REFERENCES Location_State(State_id));
+
+ INSERT INTO Location_City VALUES(1,'Patiala',21);
+ INSERT INTO Location_City VALUES(2,'Mohali',21);
+ INSERT INTO Location_City VALUES(3,'Ludhiana',21);
+ INSERT INTO Location_City VALUES(4,'Bathinda',21);
+ INSERT INTO Location_City VALUES(5,'Malerkotla',21);
+ INSERT INTO Location_City VALUES(6,'Kapurthala',21);
+ INSERT INTO Location_City VALUES(7,'Moga',21);
+ INSERT INTO Location_City VALUES(8,'Pathankot',21);
+ INSERT INTO Location_City VALUES(9,'Barnala',21);
+ INSERT INTO Location_City VALUES(10,'Amritsar',21);
+ INSERT INTO Location_City VALUES(11,'Batala',21);
+ INSERT INTO Location_City VALUES(12,'Khanna',21);
+ INSERT INTO Location_City VALUES(13,'Jalandhar',21);
+ INSERT INTO Location_City VALUES(14,'Phagwara',21);
+ INSERT INTO Location_City VALUES(15,'Hoshiarpur',21);
+ INSERT INTO Location_City VALUES(16,'Firozpur',21);
+ INSERT INTO Location_City VALUES(17,'Mansa',21);
+ INSERT INTO Location_City VALUES(18,'Sangrur',21);
+ INSERT INTO Location_City VALUES(19,'Zirakpur',21);
+ INSERT INTO Location_City VALUES(20,'Mandi Gobindgarh',21);
+ INSERT INTO Location_City VALUES(21,'Gurdaspur',21);
+ INSERT INTO Location_City VALUES(22,'Tarn Taran Sahib',21);
+ INSERT INTO Location_City VALUES(23,'Fazilka',21);
+ INSERT INTO Location_City VALUES(24,'Jagraon',21);
+ INSERT INTO Location_City VALUES(25,'Samana',21);
+ INSERT INTO Location_City VALUES(26,'Anandpur Sahib',21);
+ INSERT INTO Location_City VALUES(27,'Mukerian',21);
+ INSERT INTO Location_City VALUES(28,'Majitha',21);
+ INSERT INTO Location_City VALUES(29,'Sanaur',21);
+ INSERT INTO Location_City VALUES(30,'Bassi Pathana',21);
+ INSERT INTO Location_City VALUES(31,'Sri Muktsar Sahib',21);
+ INSERT INTO Location_City VALUES(32,'Abohar',21);
+ INSERT INTO Location_City VALUES(33,'Sahibzada Ajit Singh Nagar',21);
+ INSERT INTO Location_City VALUES(34,'Rajpura',21);
+ INSERT INTO Location_City VALUES(35,'Sunam',21);
+ INSERT INTO Location_City VALUES(36,'Shaheed Bhagat Singh Nagar',21);
+ INSERT INTO Location_City VALUES(37,'Kot Kapura',21);
+ INSERT INTO Location_City VALUES(38,'Aur',21);
+ INSERT INTO Location_City VALUES(39,'Malout',21);
+ INSERT INTO Location_City VALUES(40,'Budhlada',21);
+ INSERT INTO Location_City VALUES(41,'Nakodar',21);
+ INSERT INTO Location_City VALUES(42,'Patti',21);
+ INSERT INTO Location_City VALUES(43,'Zira',21);
+ INSERT INTO Location_City VALUES(45,'Amloh',21);
+ INSERT INTO Location_City VALUES(46,'Ajnala',21);
+ INSERT INTO Location_City VALUES(47,'Shri Hargobindpur',21);
+ INSERT INTO Location_City VALUES(48,'Balachaur',21);
+ INSERT INTO Location_City VALUES(49,'Moonak',21);
+ INSERT INTO Location_City VALUES(50,'Ghanaur',21);
+
+
+CREATE TABLE Location_Neighborhood(Neighborhood_id INTEGER PRIMARY KEY,
+ 								  Neighborhood_cleansed VARCHAR(50),
+								  City_id INTEGER, FOREIGN KEY(City_id) REFERENCES Location_City(City_id));
+
+ INSERT INTO Location_Neighborhood VALUES(1,'Kensington-Cedar Cottage',1);
+ INSERT INTO Location_Neighborhood VALUES(2,'Riley Park',2);
+ INSERT INTO Location_Neighborhood VALUES(3,'Chinatown',3);
+ INSERT INTO Location_Neighborhood VALUES(4,'Commercial Drive',4);
+ INSERT INTO Location_Neighborhood VALUES(5,'Mount Pleasant',2);
+ INSERT INTO Location_Neighborhood VALUES(6,'Hastings-Sunrise',33);
+ INSERT INTO Location_Neighborhood VALUES(7,'West End',19);
+ INSERT INTO Location_Neighborhood VALUES(8,'Downtown Vancouver',10);
+ INSERT INTO Location_Neighborhood VALUES(9,'Fairview',13);
+ INSERT INTO Location_Neighborhood VALUES(10,'Renfrew-Collngwood',10);
+ INSERT INTO Location_Neighborhood VALUES(11,'Coal Harbour',11);
+ INSERT INTO Location_Neighborhood VALUES(12,'Coal Harbour',3);
+ INSERT INTO Location_Neighborhood VALUES(13,'Downtown Vancouver',1);
+ INSERT INTO Location_Neighborhood VALUES(14,'West End',14);
+ INSERT INTO Location_Neighborhood VALUES(15,'Chinatown',2);
+ INSERT INTO Location_Neighborhood VALUES(16,'Chinatown',16);
+ INSERT INTO Location_Neighborhood VALUES(17,'Riley Park',27);
+ INSERT INTO Location_Neighborhood VALUES(18,'Commercial Drive',10);
+ INSERT INTO Location_Neighborhood VALUES(19,'Mount Pleasant',19);
+ INSERT INTO Location_Neighborhood VALUES(20,'Commercial Drive',20);
+ INSERT INTO Location_Neighborhood VALUES(21,'Fairview',11);
+ INSERT INTO Location_Neighborhood VALUES(22,'Kensington-Cedar Cottage',42);
+ INSERT INTO Location_Neighborhood VALUES(23,'Fairview',33);
+ INSERT INTO Location_Neighborhood VALUES(24,'Commercial Drive',42);
+ INSERT INTO Location_Neighborhood VALUES(25,'Renfrew-Collingwood',15);
+
+CREATE TABLE Location_Street(Street_id INTEGER PRIMARY KEY,
+						   Street VARCHAR(50),
+ 						   Zip_id INTEGER,
+ 							Neighborhood_id INTEGER ,
+ 							 FOREIGN KEY(Zip_id) REFERENCES Location_Zipcode(Zip_id),
+							FOREIGN KEY(Neighborhood_id) REFERENCES Location_Neighborhood(Neighborhood_id));
+						
+ INSERT INTO Location_Street VALUES(1,'Airpott Road (Pvt.)',1,1);
+ INSERT INTO Location_Street VALUES(2,'Abbott Street',2,25);
+ INSERT INTO Location_Street VALUES(3,'Bennet Road',3,18);
+ INSERT INTO Location_Street VALUES(4,'Brooks Street',4,21);
+ INSERT INTO Location_Street VALUES(5,'Calvin Court',5,14);
+ INSERT INTO Location_Street VALUES(6,'Betton Street',6,2);
+ INSERT INTO Location_Street VALUES(7,'Deer Park Drive',7,20);
+ INSERT INTO Location_Street VALUES(8,'Fawn Court',8,12);
+ INSERT INTO Location_Street VALUES(9,'Glidden Lane',9,17);
+ INSERT INTO Location_Street VALUES(10,'Renfrew-Collngwood',10,13);
+ INSERT INTO Location_Street VALUES(11,'Country Way',11,3);
+ INSERT INTO Location_Street VALUES(12,'Coal Harbour',12,7);
+ INSERT INTO Location_Street VALUES(13,'Cross Street',13,8);
+ INSERT INTO Location_Street VALUES(14,'Maple Street',14,4);
+ INSERT INTO Location_Street VALUES(15,'Night Road (Pvt.)',15,5);
+ INSERT INTO Location_Street VALUES(16,'Oak Street',16,9);
+ INSERT INTO Location_Street VALUES(17,'Park Avenue Street',17,6);
+ INSERT INTO Location_Street VALUES(18,'Parker Street',18,10);
+ INSERT INTO Location_Street VALUES(19,'Mill Street',19,19);
+ INSERT INTO Location_Street VALUES(20,'North Road',20,21);
+ INSERT INTO Location_Street VALUES(21,'Riverview Terrrace',21,11);
+ INSERT INTO Location_Street VALUES(22,'School Street',22,16);
+ INSERT INTO Location_Street VALUES(23,'liberty Drive',23,24);
+ INSERT INTO Location_Street VALUES(24,'Lorraine Avenue',24,22);
+ INSERT INTO Location_Street VALUES(25,'Vista Way',25,15);
+
+CREATE TABLE Location_Neighborhood_Zipcode(
+				Neighborhood_Zipcode_id INTEGER PRIMARY KEY,
+				Zip_id INTEGER,
+				Neighborhood_id INTEGER,
+				FOREIGN KEY(Zip_id) REFERENCES Location_Zipcode(Zip_id),
+				FOREIGN KEY(Neighborhood_id) REFERENCES Location_Neighborhood(Neighborhood_id));
+        
+INSERT INTO Location_Neighborhood_Zipcode VALUES(1,1,1);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(2,2,2);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(3,3,3);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(4,4,4);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(5,5,5);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(6,6,6);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(7,7,7);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(8,8,8);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(9,9,9);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(10,10,10);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(11,11,11);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(12,12,12);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(13,13,13);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(14,14,14);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(15,15,15);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(16,16,16);
+INSERT INTO Location_Neighborhood_Zipcode VALUES(17,17,17);
+
+CREATE TABLE Location_Latitude_Longitude(Latitude_Longitude_id INTEGER PRIMARY KEY,
+ 										Latitude DOUBLE PRECISION,
+                    Longitude DOUBLE PRECISION,
+										Street_id INTEGER,
+ 										FOREIGN KEY(Street_id) REFERENCES Location_Street(Street_id));
+
+INSERT INTO Location_Latitude_Longitude VALUES(1,49.28771582,-123.1211027,1);
+INSERT INTO Location_Latitude_Longitude VALUES(2,49.25375607,-123.112659,2);
+INSERT INTO Location_Latitude_Longitude VALUES(3,49.24577007,-123.1051582,3);
+INSERT INTO Location_Latitude_Longitude VALUES(4,49.27954755,-123.1054572,4);
+INSERT INTO Location_Latitude_Longitude VALUES(5,49.28208989,-123.1251498,5);
+INSERT INTO Location_Latitude_Longitude VALUES(6,49.2555008,-123.0669555,6);
+INSERT INTO Location_Latitude_Longitude VALUES(7,49.2497391,-123.0810768,7);
+INSERT INTO Location_Latitude_Longitude VALUES(8,49.27419496,-123.1295468,8);
+INSERT INTO Location_Latitude_Longitude VALUES(9,49.27733617,-123.0415183,9);
+INSERT INTO Location_Latitude_Longitude VALUES(10,49.26382267,-123.0719409,10);
+INSERT INTO Location_Latitude_Longitude VALUES(11,49.25195425,-123.0355008,11);
+INSERT INTO Location_Latitude_Longitude VALUES(12,49.26180792,-123.109049,12);
+INSERT INTO Location_Latitude_Longitude VALUES(13,49.26564039,-123.0952401,13);
+INSERT INTO Location_Latitude_Longitude VALUES(14,49.2742743,-123.070628,14);
+INSERT INTO Location_Latitude_Longitude VALUES(15,49.28251202,-123.1282693,15);
+INSERT INTO Location_Latitude_Longitude VALUES(16,49.26117221,-123.1353542,16);
+INSERT INTO Location_Latitude_Longitude VALUES(17,49.25732203,-123.0854536,17);
+INSERT INTO Location_Latitude_Longitude VALUES(18,49.28218792,-123.1250276,18);
+INSERT INTO Location_Latitude_Longitude VALUES(19,49.23365089,-123.0543941,19);
+INSERT INTO Location_Latitude_Longitude VALUES(20,49.2342708,-123.0530922,20);
+INSERT INTO Location_Latitude_Longitude VALUES(21,49.26259942,-123.1730784,21);
+INSERT INTO Location_Latitude_Longitude VALUES(22,49.27933433,-123.1237735,22);
+INSERT INTO Location_Latitude_Longitude VALUES(23,49.27755196,-123.1248665,23);
+INSERT INTO Location_Latitude_Longitude VALUES(24,49.27351142,-123.0694459,24);
+INSERT INTO Location_Latitude_Longitude VALUES(25,49.28000765,-123.1247453,25);
+SELECT * FROM Location_Latitude_Longitude;
+
+CREATE TABLE AIRBNB(id INTEGER PRIMARY KEY,
+				   hosts_id INTEGER,
+				   Property_id INTEGER,
+				   Latitude_Longitude_id INTEGER,
+				   FOREIGN KEY(hosts_id) REFERENCES hosts_entry(hosts_id),
+				   FOREIGN KEY(Property_id) REFERENCES Property(Property_id),
+				   FOREIGN KEY(Latitude_Longitude_id) REFERENCES Location_Latitude_Longitude(Latitude_Longitude_id));
+				   
+				  
+INSERT INTO AIRBNB VALUES(2,7689,7,2);
+INSERT INTO AIRBNB VALUES(3,7856,13,3);
+INSERT INTO AIRBNB VALUES(4,8123,26,5);
+INSERT INTO AIRBNB VALUES(5,2018,22,1);
+INSERT INTO AIRBNB VALUES(6,2013,21,7);
+INSERT INTO AIRBNB VALUES(11,6666,38,14);
+INSERT INTO AIRBNB VALUES(12,2526,24,13);
+INSERT INTO AIRBNB VALUES(21,2687,15,25);
+INSERT INTO AIRBNB VALUES(22,2617,20,24);
+INSERT INTO AIRBNB VALUES(23,7689,7,23);
+INSERT INTO AIRBNB VALUES(24,5467,9,22);
+INSERT INTO AIRBNB VALUES(25,1253,10,21);
+ 
