@@ -1,8 +1,8 @@
 # Data Base Management System for Airbnb
 
 <ul>
-<li>Create hosts_entry table and insert data in it. </li>
-<li>Create reviews table and insert data in it. </li>
+<li>Create hosts_entry table and insert data in it.(https://github.com/SKULLDRAGON099/final_dbms/blob/main/Research%20Questions/Question%201/q1.sql)
+- [Create reviews table and insert data in it.]</li>
 <li>Create Review_Rating table and insert data in it. </li>
 <li>Create Property table and insert data in it. </li>
 <li>Create Location_Zipcode table and insert data in it. </li>
