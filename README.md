@@ -19,7 +19,7 @@
 
 
 
-QUESTION 1: What are the average rental prices for AIRBNB in each city? Which is the most expensive city with respect to the rental prices?
+<p>QUESTION 1: What are the average rental prices for AIRBNB in each city? Which is the most expensive city with respect to the rental prices?
 
 
 SELECT 
@@ -51,3 +51,4 @@ FROM
 	GROUP BY
 		LC.City_id
 	ORDER BY AVG_Price DESC LIMIT 1;
+</p>
