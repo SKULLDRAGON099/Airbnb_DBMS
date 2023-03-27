@@ -1,20 +1,19 @@
 # Data Base Management System for Airbnb
 
-<ul>
-<li>Create hosts_entry table and insert data in it.(https://github.com/SKULLDRAGON099/final_dbms/blob/main/Research%20Questions/Question%201/q1.sql)
-- [Create reviews table and insert data in it.]</li>
-<li>Create Review_Rating table and insert data in it. </li>
-<li>Create Property table and insert data in it. </li>
-<li>Create Location_Zipcode table and insert data in it. </li>
-<li>Create Location_country table and insert data in it. </li>
-<li>Create Location_state table and insert data in it. </li>
-<li>Create Location_city table and insert data in it. </li>
-<li>Create Location_Neighborhood table and insert data in it. </li>
-<li>Create Location_Street table and insert data in it. </li>
-<li>Create Location_Neighborhood_Zipcode table and insert data in it. </li>
-<li>Create Location_Latitude_Longitude table and insert data in it. </li>
-<li>Create AIRBNB table and insert data in it. </li>
-</ul>
+- [Create hosts_entry table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/hosts_entry.sql)
+- [Create reviews table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/reviews.sql)
+- [Create Review_Rating table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Review_Rating.sql)
+- [Create Property table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Property.sql)
+- [Create Location_Zipcode table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_Zipcode.sql)
+- [Create Location_country table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_country.sql)
+- [Create Location_state table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_state.sql)
+- [Create Location_city table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_city.sql)
+- [Create Location_Neighborhood table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_Neighborhood.sql)
+- [Create Location_Street table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_Street.sql)
+- [Create Location_Neighborhood_Zipcode table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_Neighborhood_Zipcode.sql)
+- [Create Location_Latitude_Longitude table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/Location_Latitude_Longitude.sql)
+- [Create AIRBNB table and insert data in it.](https://github.com/SKULLDRAGON099/Airbnb_DBMS/blob/main/AIRBNB.sql)
+
 
 
 ## Refrence Questions:
